@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.vcard-card {
+  @apply bg-vcard-card text-vcard-text rounded-lg border border-vcard-border transition-all duration-300;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.vcard-section {
+  @apply py-16 md:py-24;
+}
+
+.vcard-title {
+  @apply text-3xl md:text-4xl font-bold mb-6 text-gold;
+}
+
+.vcard-subtitle {
+  @apply text-lg md:text-xl font-semibold mb-4 text-vcard-muted;
+}
+
+.vcard-muted {
+  @apply text-vcard-muted;
+}
+
+.vcard-btn {
+  @apply px-6 py-3 rounded-lg font-medium transition-all duration-200 bg-gold text-vcard-bg hover:bg-yellow-400 shadow-lg;
+}
+
+.vcard-btn-outline {
+  @apply px-6 py-3 rounded-lg font-medium transition-all duration-200 border border-gold text-gold bg-transparent hover:bg-gold hover:text-vcard-bg;
+}
+
+/* Gradient text effect */
+.gradient-text {
+  background: linear-gradient(135deg, #ffd700 0%, #ff6b35 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Card hover effects */
+.card-hover {
+  @apply transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl;
+}
+
+/* Section dividers */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, var(--vcard-border) 50%, transparent 100%);
+  margin: 2rem 0;
+}
+
+/* vCard Layout */
+.vcard-layout {
+  @apply flex min-h-screen bg-vcard-bg p-6 gap-6;
+}
+
+.vcard-sidebar {
+  @apply w-80 bg-vcard-card rounded-3xl flex flex-col p-8;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 6px;
+  height: calc(100vh - 12px);
+  max-height: calc(100vh - 12px);
+}
+
+.vcard-main {
+  @apply flex-1 flex flex-col bg-vcard-bg rounded-3xl;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.vcard-nav {
+  @apply flex bg-gray-800/50 backdrop-blur-sm border-b border-vcard-border p-6 rounded-t-3xl;
+}
+
+.nav-button {
+  @apply px-6 py-3 mx-2 rounded-xl font-medium transition-all duration-200 text-vcard-muted hover:text-gold hover:bg-gray-700/50;
+}
+
+.nav-button.active {
+  @apply text-vcard-bg shadow-lg;
+  background-color: rgba(255, 215, 0, 0.8);
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+}
+
+.vcard-content {
+  @apply flex-1 p-8 overflow-y-auto rounded-b-3xl;
+}
+
+/* Profile Section */
+.profile-section {
+  @apply text-center mb-8;
+}
+
+.profile-image {
+  @apply w-48 h-48 rounded-3xl mx-auto mb-6 object-cover border-4 border-gold shadow-2xl;
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+}
+
+.profile-name {
+  @apply text-2xl font-bold text-vcard-text mb-3;
+}
+
+.profile-title {
+  @apply px-6 py-2 bg-gold text-vcard-bg rounded-full text-sm font-medium inline-block shadow-lg;
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+}
+
+/* Contact Info */
+.contact-info {
+  @apply space-y-6 mb-8;
+}
+
+.contact-item {
+  @apply flex items-center space-x-4 text-vcard-muted p-3 rounded-xl hover:bg-gray-800/30 transition-all duration-200;
+}
+
+.contact-icon {
+  @apply w-6 h-6 text-gold flex-shrink-0;
+}
+
+.contact-item span {
+  @apply text-sm;
+}
+
+/* Social Links */
+.social-links {
+  @apply flex justify-center space-x-4 mt-auto pt-6 border-t border-vcard-border;
+}
+
+.social-link {
+  @apply w-12 h-12 bg-vcard-bg rounded-full flex items-center justify-center text-vcard-muted hover:text-gold hover:bg-yellow-400/20 transition-all duration-200 shadow-lg;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.2);
+}
+
+.social-icon {
+  @apply w-6 h-6;
+}

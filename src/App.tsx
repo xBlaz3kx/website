@@ -1,0 +1,82 @@
+import React, { useState } from 'react';
+import About from './components/About';
+import Resume from './components/Resume';
+import Portfolio from './components/Portfolio';
+import ContactInfo from './components/ContactInfo';
+import SocialLinks from './components/SocialLinks';
+
+import './App.css';
+
+const App: React.FC = () => {
+  const [activeSection, setActiveSection] = useState('about');
+  const [emailRevealed, setEmailRevealed] = useState(false);
+
+  // Get email from environment variable or use default
+  const email = process.env.REACT_APP_EMAIL;
+
+  const navItems = [
+    { id: 'about', label: 'About' },
+    { id: 'resume', label: 'Resume' },
+    { id: 'portfolio', label: 'Portfolio' },
+  ];
+
+  const renderContent = () => {
+    switch (activeSection) {
+      case 'about':
+        return <About />;
+      case 'resume':
+        return <Resume />;
+      case 'portfolio':
+        return <Portfolio />;
+      default:
+        return <About />;
+    }
+  };
+
+  return (
+    <div className="vcard-layout">
+      {/* Profile Sidebar */}
+      <div className="vcard-sidebar">
+        {/* Profile Image */}
+        <div className="profile-section">
+          <img
+            src="https://via.placeholder.com/200x200/1a1a1a/FFD700?text=Profile"
+            alt="Profile"
+            className="profile-image"
+          />
+          <h1 className="profile-name">Blaž Dular</h1>
+          <div className="profile-title">Backend Software Engineer</div>
+        </div>
+
+        {/* Contact Info */}
+        <ContactInfo />
+
+        {/* Social Links */}
+        <SocialLinks />
+      </div>
+
+      {/* Main Content */}
+      <div className="vcard-main"> 
+        {/* Navigation */}
+        <nav className="vcard-nav">
+          {navItems.map((item) => (
+            <button
+              key={item.id}
+              className={`nav-button ${activeSection === item.id ? 'active' : ''}`}
+              onClick={() => setActiveSection(item.id)}
+            >
+              {item.label}
+            </button>
+          ))}
+        </nav>
+
+        {/* Content Area */}
+        <div className="vcard-content"> {/* New content class */}
+          {renderContent()}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default App;
