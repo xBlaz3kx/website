@@ -9,10 +9,6 @@ import './App.css';
 
 const App: React.FC = () => {
   const [activeSection, setActiveSection] = useState('about');
-  const [emailRevealed, setEmailRevealed] = useState(false);
-
-  // Get email from environment variable or use default
-  const email = process.env.REACT_APP_EMAIL;
 
   const navItems = [
     { id: 'about', label: 'About' },
