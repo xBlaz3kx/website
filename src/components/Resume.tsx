@@ -2,30 +2,36 @@ import React from 'react';
 import TimelineItem from './TimelineItem';
 
 const experience = [
-  {
-    title: 'Software Engineer',
-    company: 'Bitstamp',
-    period: '2024 - Present',
-    description: 'Working in the trading division of Bitstamp. Mainly working on the derivatives trading platform. Developing new features, proposing new solutions and improving existing ones.',
-  },
-  {
-    title: 'Lead Software Engineer',
-    company: 'GL Charge',
-    period: '2023 - 2024',
-    description: 'Leading a team of 3 software engineers to build a scalable charging station management system in Go.'
-  },
-  {
-    title: 'Software Engineer',
-    company: 'GL Charge',
-    period: '2021 - 2023',
-    description: 'Worked on a charging station with integrated payment system and a charging station management system.'
-  },
-  {
-    title: 'Developer Intern',
-    company: 'Syphony Retail AI',
-    period: '2018 - 2020',
-    description: 'Worked as an intern in the development team of Symphony Retail AI. Bug fixing and occasionally implementing new features.'
-  }
+    {
+        title: 'Software Engineer',
+        company: 'Bitstamp',
+        period: '2024 - Present',
+        description: 'Working in the trading division of Bitstamp by Robinhood. Mainly working on the derivatives trading platform. Developing new features, proposing new solutions and improving existing ones.',
+    },
+    {
+        title: 'Lead Software Engineer',
+        company: 'GL Charge',
+        period: '2023 - 2024',
+        description: 'Leading a team of 3 software engineers to build a scalable charging station management system in Go.'
+    },
+    {
+        title: 'Software Engineer',
+        company: 'GL Charge',
+        period: '2021 - 2023',
+        description: 'Worked on a charging station with integrated payment system and a charging station management system.'
+    },
+    {
+        title: 'Software Engineering intern',
+        company: 'University of Ljubljana, Faculty of Electrical Engineering',
+        period: '2021 - 2021',
+        description: 'As a software developer, I designed and developed a charge point for electrical bikes utilizing off-the-shelf hardware. This project was part of my bachelor\'s thesis, which focused on the development of a charging station for electric bikes.'
+    },
+    {
+        title: 'Developer Intern',
+        company: 'Syphony Retail AI',
+        period: '2019 - 2020',
+        description: 'Worked as an intern in the development team of Symphony Retail AI. Bug fixing and occasionally implementing new features.'
+    }
 ];
 
 const education = [
