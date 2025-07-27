@@ -40,7 +40,7 @@ const App: React.FC = () => {
         {/* Profile Image */}
         <div className="profile-section">
           <img
-            src="https://via.placeholder.com/200x200/1a1a1a/FFD700?text=Profile"
+            src="https://media.licdn.com/dms/image/v2/C4D03AQFKY6dhB_szQg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1646593313974?e=1756339200&v=beta&t=qQHvo37Tky4rUkPX2ni1wF-VMRnvL9B49WYEN28ykO8"
             alt="Profile"
             className="profile-image"
           />
