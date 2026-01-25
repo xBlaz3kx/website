@@ -4,15 +4,21 @@ import TimelineItem from './TimelineItem';
 const experience = [
     {
         title: 'Software Engineer',
+        company: 'Veza',
+        period: '2026 - Present',
+        description: 'Working on cutting-edge IGA solutions as a part of Access Review team.',
+    },
+    {
+        title: 'Software Engineer',
         company: 'Bitstamp',
-        period: '2024 - Present',
-        description: 'Working in the trading division of Bitstamp by Robinhood. Mainly working on the derivatives trading platform. Developing new features, proposing new solutions and improving existing ones.',
+        period: '2024 - 2026',
+        description: 'Outsourced software engineer for Derivatives team. Owned Auto-deleveraging feature from design to production. Worked on multiple projects improving the performance and reliability of the derivatives trading platform.',
     },
     {
         title: 'Lead Software Engineer',
         company: 'GL Charge',
         period: '2023 - 2024',
-        description: 'Leading a team of 3 software engineers to build a scalable charging station management system in Go.'
+        description: 'Lead a team of 3 software engineers to build a scalable charging station management system in Go.'
     },
     {
         title: 'Software Engineer',
